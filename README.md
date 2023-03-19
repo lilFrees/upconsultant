@@ -1,1 +1,1 @@
-# upconsultant.github.io
+# upconsultant

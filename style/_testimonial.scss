@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap");
+.test {
+  background-color: $light;
+  min-height: 30rem;
+  border-bottom: 1px solid #ccc;
+  &__container {
+    max-width: $container;
+    margin: 0 auto;
+    padding: 7rem 3rem;
+  }
+
+  &__heading {
+    color: #000;
+    font-size: 3.4rem;
+    font-family: "Rany", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 5rem;
+  }
+
+  &__bits {
+    font-size: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 3rem;
+  }
+
+  &__bit {
+    color: #333;
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 1rem;
+    padding: 4rem 4rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    position: relative;
+
+    &-profile {
+      height: 5rem;
+      width: 5rem;
+      overflow: hidden;
+      border-radius: 10rem;
+      position: absolute;
+      left: 50%;
+      top: -2.5rem;
+      transform: translateX(-50%);
+    }
+
+    &-img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    &-univer {
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: rgb(32, 37, 34);
+    }
+
+    &-name {
+      font-size: 1rem;
+    }
+
+    &-par {
+      font-size: 0.9rem;
+      line-height: 1.5;
+      position: relative;
+      color: rgb(65, 65, 65);
+
+      &::before {
+        content: '"';
+        font-size: 8rem;
+        font-family: "Passion One", serif;
+        position: absolute;
+        top: -4rem;
+        left: 0;
+        color: rgba(34, 34, 34, 0.034);
+        transform: rotateY(180deg);
+      }
+    }
+  }
+}
