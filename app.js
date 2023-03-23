@@ -17,9 +17,14 @@ const navList = document.querySelector(".nav__list");
 const expandHandler = () => {
   let isExpanded = navList.hasAttribute("aria-expanded");
   navList.toggleAttribute("aria-expanded");
-  console.log(isExpanded);
   toggle.textContent = isExpanded ? "menu" : "close";
 };
+
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape") {
+    expandHandler();
+  }
+});
 
 window.addEventListener("scroll", function () {
   let header = this.document.querySelector(".nav");
