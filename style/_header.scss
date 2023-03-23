@@ -108,10 +108,10 @@
 }
 
 .header {
-  min-height: 100.01vh;
+  height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../assets/img/campus1.jpg");
   background-size: cover;
   background-position: top;
-  overflow-x: hidden;
+  overflow: hidden;
 }
