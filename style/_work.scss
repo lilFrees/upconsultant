@@ -8,8 +8,11 @@
   }
 
   &__container {
-    @include section-grid-container;
     padding: 4rem 3rem 7rem;
+  }
+
+  &__bits {
+    @include section-grid-container;
   }
 
   &__title {

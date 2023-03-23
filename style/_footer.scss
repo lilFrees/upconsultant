@@ -48,7 +48,9 @@
     justify-content: space-between;
     gap: 3rem;
     @media only screen and (max-width: 768px) {
-      gap: 5rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
+      grid-template-rows: repeat(auto-fill, 3rem);
     }
   }
 
@@ -57,7 +59,7 @@
     display: inline-block;
     border-radius: 1rem;
     width: max-content;
-    height: 3rem;
+    height: 100%;
     transition: 0.2s cubic-bezier(1, -0.01, 0, 1);
     display: flex;
     align-items: center;
