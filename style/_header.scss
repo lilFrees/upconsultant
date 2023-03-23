@@ -90,17 +90,19 @@
   }
 }
 
-.nav {
-  &.sticky {
-    background-color: rgba(255, 255, 255, 0.9);
-    height: 5.5rem;
-    box-shadow: 0 2px 50px rgba(0, 0, 0, 0.1);
-    & * {
-      color: #000;
-    }
-    .nav__item:hover {
-      background-color: #000;
-      color: #fff;
+@media only screen and (min-width: 768px) {
+  .nav {
+    &.sticky {
+      background-color: rgba(255, 255, 255, 0.9);
+      height: 5.5rem;
+      box-shadow: 0 2px 50px rgba(0, 0, 0, 0.1);
+      & * {
+        color: #000;
+      }
+      .nav__item:hover {
+        background-color: #000;
+        color: #fff;
+      }
     }
   }
 }
