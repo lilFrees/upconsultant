@@ -23,7 +23,7 @@ $container: 80rem;
   align-items: center;
   justify-content: space-between;
   gap: 5rem;
-  height: 40rem;
+  min-height: 40rem;
 }
 
 @mixin section-grid-container {
@@ -32,6 +32,7 @@ $container: 80rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
   grid-gap: 2.5rem;
+  place-content: center;
   padding: 7rem 3rem;
 }
 

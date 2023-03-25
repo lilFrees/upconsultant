@@ -32,12 +32,16 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 62.5%;
   background-color: #111;
-  overflow-x: hidden;
-  width: 100%; }
+  overflow-x: hidden !important;
+  width: 100% !important; }
 
 @media only screen and (max-width: 85em) {
   body {
     font-size: 60%; } }
+
+@media only screen and (max-width: 70em) {
+  body {
+    font-size: 58%s; } }
 
 @media screen and (max-width: 48em) {
   body {
@@ -46,6 +50,14 @@ body {
 html {
   scroll-behavior: smooth;
   transition: 2s all; }
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0; }
 
 .hidden {
   opacity: 0;
@@ -143,7 +155,7 @@ html {
   color: #000; }
 
 .nav__toggle {
-  color: #fff;
+  color: #7e7e7e;
   padding: 1.4rem;
   background-color: transparent;
   border: none;
@@ -170,11 +182,11 @@ html {
     color: #fff; } }
 
 .header {
-  min-height: 100.01vh;
+  height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/campus1.jpg");
   background-size: cover;
   background-position: top;
-  overflow-x: hidden; }
+  overflow: hidden; }
 
 .main__container {
   max-width: 80rem;
@@ -213,7 +225,7 @@ html {
 
 @media screen and (max-width: 48em) {
   .main__heading {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-align: center; } }
 
 .main__brand {
@@ -270,7 +282,7 @@ html {
   align-items: center;
   justify-content: space-between;
   gap: 5rem;
-  height: 40rem; }
+  min-height: 40rem; }
 
 @media only screen and (max-width: 48em) {
   .about__container {
@@ -400,11 +412,12 @@ html {
   align-items: center;
   justify-content: space-between;
   gap: 5rem;
-  height: 40rem; }
+  min-height: 40rem; }
 
 @media screen and (max-width: 48em) {
   .process__container {
-    text-align: center; } }
+    text-align: center;
+    padding: 10rem 0; } }
 
 .process__des-text {
   font-size: 1.5rem;
@@ -452,13 +465,25 @@ html {
     border: none; } }
 
 .work__container {
+  padding: 4rem 3rem 7rem; }
+
+@media only screen and (max-width: 768px) {
+  .work__container {
+    padding: 4rem 1rem 7rem; } }
+
+.work__bits {
   max-width: 80rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
   grid-gap: 2.5rem;
-  padding: 7rem 3rem;
-  padding: 4rem 3rem 7rem; }
+  place-content: center;
+  padding: 7rem 3rem; }
+
+@media only screen and (max-width: 480px) {
+  .work__bits {
+    width: 100%;
+    padding: 0; } }
 
 .work__title {
   font-size: 3.5rem;
@@ -480,6 +505,10 @@ html {
   justify-content: space-between;
   align-items: center;
   padding: 1rem; }
+
+@media only screen and (max-width: 480px) {
+  .work__bit {
+    padding: 0; } }
 
 .work__heading {
   font-size: 1.5rem;
@@ -592,7 +621,7 @@ html {
   align-items: center;
   justify-content: space-between;
   gap: 5rem;
-  height: 40rem;
+  min-height: 40rem;
   flex-direction: column;
   padding: 5rem 2rem;
   gap: 0;
@@ -605,14 +634,18 @@ html {
 
 .footer__top {
   display: flex;
-  justify-content: space-around;
-  align-items: center; }
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; }
 
 @media only screen and (max-width: 768px) {
   .footer__top {
     flex-direction: column;
     align-items: center;
     gap: 3rem; } }
+
+.footer__address {
+  width: 100%; }
 
 .footer__brand {
   font-size: 2rem;
@@ -635,14 +668,16 @@ html {
 
 @media only screen and (max-width: 768px) {
   .footer__logos {
-    gap: 5rem; } }
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
+    grid-template-rows: repeat(auto-fill, 3rem); } }
 
 .footer__item {
   font-size: 1.2rem;
   display: inline-block;
   border-radius: 1rem;
   width: max-content;
-  height: 3rem;
+  height: 100%;
   transition: 0.2s cubic-bezier(1, -0.01, 0, 1);
   display: flex;
   align-items: center;

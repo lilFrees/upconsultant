@@ -8,8 +8,18 @@
   }
 
   &__container {
-    @include section-grid-container;
     padding: 4rem 3rem 7rem;
+    @media only screen and (max-width: 768px) {
+      padding: 4rem 1rem 7rem;
+    }
+  }
+
+  &__bits {
+    @include section-grid-container;
+    @media only screen and (max-width: 480px) {
+      width: 100%;
+      padding: 0;
+    }
   }
 
   &__title {
@@ -33,7 +43,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    // border: 1px dashed yellow;
+    @media only screen and (max-width: 480px) {
+      padding: 0;
+    }
   }
 
   &__heading {
