@@ -73,7 +73,7 @@
   }
 
   &__toggle {
-    color: rgb(126, 126, 126);
+    color: rgb(139, 139, 139);
     padding: 1.4rem;
     background-color: transparent;
     border: none;
@@ -108,10 +108,10 @@
 }
 
 .header {
-  height: 100vh;
+  min-height: 100.01vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../assets/img/campus1.jpg");
   background-size: cover;
   background-position: top;
-  overflow: hidden;
+  overflow-x: hidden;
 }

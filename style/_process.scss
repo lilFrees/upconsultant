@@ -1,6 +1,9 @@
 .process {
   padding: 0 3rem;
   width: 100%;
+  @media only screen and (max-width: 768px) {
+    padding: 0 1rem;
+  }
   &__container {
     @include section-flex-container;
     @media screen and (max-width: 48em) {
@@ -19,14 +22,7 @@
 
   &__title {
     color: $light;
-    font-size: 4rem;
-    font-family: "Rany", sans-serif;
-    font-weight: 400;
-    letter-spacing: 1px;
-    margin-bottom: 3rem;
-    @media only screen and (max-width: 768px) {
-      font-size: 3rem;
-    }
+    @include sectionHeading;
   }
 
   &__right {

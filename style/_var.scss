@@ -32,8 +32,30 @@ $container: 80rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
   grid-gap: 2.5rem;
-  place-content: center;
   padding: 7rem 3rem;
+  place-content: center;
+}
+
+@mixin sectionHeading {
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-family: "Rany", sans-serif;
+  margin-bottom: 3rem;
+  font-size: 3.5rem;
+  text-align: center;
+  @media only screen and (max-width: 768px) {
+    font-size: 3rem;
+  }
+}
+
+@mixin footerHeading {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  @media only screen and (max-width: 768px) {
+    text-align: center;
+  }
 }
 
 @mixin fontHeading {

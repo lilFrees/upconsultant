@@ -1,5 +1,3 @@
-"use strict";
-
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -28,10 +26,7 @@ document.addEventListener("keydown", function (e) {
   }
 });
 
-let header = this.document.querySelector(".nav");
-document.addEventListener("scroll", function () {
-  if (this.window.scrollY > 500) {
-    header.classList.toggle("sticky");
-  }
-  console.log("scroll");
+window.addEventListener("scroll", function () {
+  let header = this.document.querySelector(".nav");
+  header.classList.toggle("sticky", this.window.scrollY > 500);
 });
