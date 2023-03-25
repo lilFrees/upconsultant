@@ -8,14 +8,8 @@
   }
 
   &__container {
-    padding: 4rem 3rem 7rem;
-    @media only screen and (max-width: 768px) {
-      padding: 4rem 0 7rem;
-    }
-  }
-
-  &__bits {
     @include section-grid-container;
+    padding: 4rem 3rem 7rem;
   }
 
   &__title {
