@@ -179,12 +179,34 @@
       position: relative;
       transition: 0.2s all;
       width: 100%;
+      line-height: 1.7;
 
       @media only screen and (max-width: 768px) {
         font-weight: 500;
         text-transform: uppercase;
         padding: 1rem 0;
       }
+    }
+    &-link {
+      font-size: 1rem;
+      color: $light;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 1rem;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__rights {
+    color: #aaa;
+    font-size: 0.6rem;
+    line-height: 1.5;
+    margin: 2rem 0;
+
+    @media only screen and (max-width: 48em) {
+      text-align: center;
     }
   }
 }

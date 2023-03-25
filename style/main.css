@@ -802,13 +802,34 @@ html {
   font-size: 1rem;
   position: relative;
   transition: 0.2s all;
-  width: 100%; }
+  width: 100%;
+  line-height: 1.7; }
 
 @media only screen and (max-width: 768px) {
   .footer__address-address {
     font-weight: 500;
     text-transform: uppercase;
     padding: 1rem 0; } }
+
+.footer__address-link {
+  font-size: 1rem;
+  color: #f9f9f9;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 1rem; }
+
+.footer__address-link:hover {
+  text-decoration: underline; }
+
+.footer__rights {
+  color: #aaa;
+  font-size: 0.6rem;
+  line-height: 1.5;
+  margin: 2rem 0; }
+
+@media only screen and (max-width: 48em) {
+  .footer__rights {
+    text-align: center; } }
 
 .btn__top {
   position: fixed;
