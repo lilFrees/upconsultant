@@ -239,22 +239,27 @@
         </h3>
 
         <form
-          action="https://formspree.io/f/xgeblllr"
+          action="https://formspree.io/f/xeqwrooj"
           method="POST"
           class="detail__form"
         >
           <label for="name" class="detail__label">
-            <input type="text" name="name" class="detail__input" id="name" />
-            <span class="detail__placeholder">Name</span>
-          </label>
-          <label for="name" class="detail__label">
             <input
-              type="number"
-              name="phone-number"
+              type="text"
+              name="fullName"
               class="detail__input"
               id="name"
+              placeholder="Name"
             />
-            <span class="detail__placeholder">Phone number</span>
+          </label>
+          <label for="number" class="detail__label">
+            <input
+              type="number"
+              name="phoneNumber"
+              class="detail__input"
+              id="number"
+              placeholder="Phone Number"
+            />
           </label>
           <label for="mail" class="detail__label">
             <input
@@ -263,8 +268,8 @@
               class="detail__input"
               name="email"
               id="mail"
+              placeholder="Email"
             />
-            <span class="detail__placeholder">Email address</span>
           </label>
           <button type="submit" class="detail__submit">Submit</button>
         </form>

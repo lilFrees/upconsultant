@@ -490,7 +490,8 @@ html {
   font-weight: 400;
   font-family: "Rany", sans-serif;
   margin-bottom: 3rem;
-  font-size: 3.5rem; }
+  font-size: 3.5rem;
+  text-align: center; }
 
 @media only screen and (max-width: 768px) {
   .work__title {
