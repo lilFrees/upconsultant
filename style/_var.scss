@@ -42,8 +42,8 @@ $container: 80rem;
   font-family: "Rany", sans-serif;
   margin-bottom: 3rem;
   font-size: 3.5rem;
-  text-align: center;
   @media only screen and (max-width: 768px) {
+    text-align: center;
     font-size: 3rem;
   }
 }

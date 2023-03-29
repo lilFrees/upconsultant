@@ -244,15 +244,26 @@
           class="detail__form"
         >
           <label for="name" class="detail__label">
-            <input type="text" class="detail__input" id="name" />
+            <input type="text" name="name" class="detail__input" id="name" />
             <span class="detail__placeholder">Name</span>
           </label>
           <label for="name" class="detail__label">
-            <input type="number" class="detail__input" id="name" />
+            <input
+              type="number"
+              name="phone-number"
+              class="detail__input"
+              id="name"
+            />
             <span class="detail__placeholder">Phone number</span>
           </label>
           <label for="mail" class="detail__label">
-            <input type="email" class="detail__input" name="email" id="mail" />
+            <input
+              type="email"
+              name="email-address"
+              class="detail__input"
+              name="email"
+              id="mail"
+            />
             <span class="detail__placeholder">Email address</span>
           </label>
           <button type="submit" class="detail__submit">Submit</button>
@@ -281,17 +292,21 @@
           <div class="footer__links">
             <h2 class="footer__links-heading hidden">Links</h2>
             <ul class="footer__list">
-              <li class="footer__list-item hidden">
-                <a href="#" class="footer__list-link">Home</a>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link hidden">Home</a>
               </li>
-              <li class="footer__list-item hidden">
-                <a href="#about" class="footer__list-link">About us</a>
+              <li class="footer__list-item">
+                <a href="#about" class="footer__list-link hidden">About us</a>
               </li>
-              <li class="footer__list-item hidden">
-                <a href="#work" class="footer__list-link">How it works</a>
+              <li class="footer__list-item">
+                <a href="#work" class="footer__list-link hidden"
+                  >How it works</a
+                >
               </li>
-              <li class="footer__list-item hidden">
-                <a href="#contact" class="footer__list-link">Contact us</a>
+              <li class="footer__list-item">
+                <a href="#contact" class="footer__list-link hidden"
+                  >Contact us</a
+                >
               </li>
             </ul>
           </div>
@@ -361,7 +376,7 @@
           </li>
         </ul>
         <p class="footer__rights">
-          Up Consultants Service are registered by Public Services Agency Under
+          Up Consultants Service is registered by Public Services Agency Under
           the Ministry of Justice of the Republic of Uzbekistan.
           <br />
           &COPY; 2021 All rights reserved

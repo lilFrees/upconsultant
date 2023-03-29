@@ -5,7 +5,7 @@
   position: fixed;
   top: 0;
   transition: 0.6s all;
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 800px) {
     width: 20rem;
     width: 100vh;
     background-color: transparent;
@@ -30,15 +30,14 @@
     transition: 0.2s all;
     transform: translateX(0);
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 800px) {
       position: fixed;
       top: 0;
       right: 0;
       flex-direction: column;
       align-items: center;
-      justify-content: start;
-      gap: 8rem;
-      padding-top: 10rem;
+      justify-content: space-evenly;
+      padding: 5rem 0;
       height: 100%;
       width: 100%;
 
@@ -80,7 +79,7 @@
     display: none;
     cursor: pointer;
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 800px) {
       display: block;
       z-index: 100;
       position: fixed;
@@ -90,7 +89,7 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 800px) {
   .nav {
     &.sticky {
       background-color: rgba(255, 255, 255, 0.9);
