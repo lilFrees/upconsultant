@@ -5,6 +5,7 @@
   position: fixed;
   top: 0;
   transition: 0.6s all;
+  
   @media only screen and (max-width: 800px) {
     width: 20rem;
     width: 100vh;
@@ -73,9 +74,11 @@
   }
 
   &__toggle {
-    color: rgb(139, 139, 139);
-    padding: 1.4rem;
-    background-color: transparent;
+    color: rgb(255, 255, 255);
+    background-color: rgb(82, 82, 82);
+    border-radius: 100px;
+    width: 4rem;
+    aspect-ratio: 1/1;
     border: none;
     display: none;
     cursor: pointer;
@@ -86,6 +89,10 @@
       position: fixed;
       top: 2rem;
       right: 2rem;
+    }
+
+    &-icon {
+      font-size: 1.3rem;
     }
   }
 }

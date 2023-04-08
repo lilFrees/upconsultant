@@ -136,15 +136,18 @@ html {
 .nav__link:link, .nav__link:visited {
   color: #ebebeb;
   text-decoration: none;
-  font-size: 1.1rem; }
+  font-size: 1.1rem;
+  width: max-content; }
 
 .nav__link:link:hover, .nav__link:visited:hover {
   color: #000; }
 
 .nav__toggle {
-  color: #8b8b8b;
-  padding: 1.4rem;
-  background-color: transparent;
+  color: white;
+  background-color: #525252;
+  border-radius: 100px;
+  width: 4rem;
+  aspect-ratio: 1/1;
   border: none;
   display: none;
   cursor: pointer; }
@@ -156,6 +159,9 @@ html {
     position: fixed;
     top: 2rem;
     right: 2rem; } }
+
+.nav__toggle-icon {
+  font-size: 1.3rem; }
 
 @media only screen and (min-width: 800px) {
   .nav.sticky {
@@ -848,7 +854,8 @@ html {
   font-weight: 300;
   padding: 1.5rem;
   border: 1px solid #fff;
-  text-decoration: none; }
+  text-decoration: none;
+  background-color: #000; }
 
 .btn__top > *:hover {
   background-color: #fff;

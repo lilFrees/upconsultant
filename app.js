@@ -17,7 +17,9 @@ const navList = document.querySelector(".nav__list");
 const expandHandler = () => {
   let isExpanded = navList.hasAttribute("aria-expanded");
   navList.toggleAttribute("aria-expanded");
-  toggle.textContent = isExpanded ? "menu" : "close";
+  toggle.classList.toggle("fa-bars");
+  toggle.classList.toggle("fa-xmark");
+  // toggle.textContent = isExpanded ? "menu" : "close";
 };
 
 document.addEventListener("keydown", function (e) {
