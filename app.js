@@ -28,7 +28,12 @@ document.addEventListener("keydown", function (e) {
   }
 });
 
+const logo = document.querySelector(".nav__logo-img");
+
 window.addEventListener("scroll", function () {
   let header = this.document.querySelector(".nav");
-  header.classList.toggle("sticky", this.window.scrollY > 500);
+  header.classList.toggle("sticky", this.window.scrollY > 250);
+
+  window.scrollY > 250 && logo.setAttribute("src", "assets/img/black.png");
+  window.scrollY <= 250 && logo.setAttribute("src", "assets/img/white.png");
 });

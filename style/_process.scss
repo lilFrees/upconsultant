@@ -17,6 +17,9 @@
       font-size: 1.5rem;
       line-height: 1.6;
       color: darken($light, 20%);
+      @media only screen and (max-width: 600px) {
+        font-size: 1.3rem;
+      }
     }
   }
 

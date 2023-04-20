@@ -93,10 +93,14 @@ html {
   height: 100%;
   margin: 0 auto;
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   align-items: center;
-  padding: 0 2rem;
+  padding: 0 3rem;
   max-width: 80rem; }
+
+@media only screen and (max-width: 1000px) {
+  .nav__container {
+    justify-content: end; } }
 
 .nav__list {
   display: flex;
@@ -132,6 +136,26 @@ html {
 .nav__item:hover {
   transform: translateY(-3px);
   background-color: #fff; }
+
+.nav__logo {
+  width: 10rem;
+  height: 4rem; }
+
+@media only screen and (max-width: 1000px) {
+  .nav__logo {
+    display: none; } }
+
+.nav__logo::before {
+  content: "";
+  background-color: #000;
+  width: 100%;
+  height: 100%; }
+
+.nav__logo-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover; }
 
 .nav__link:link, .nav__link:visited {
   color: #ebebeb;
@@ -221,6 +245,9 @@ html {
     font-size: 1.5rem;
     text-align: center; } }
 
+.main__logo {
+  width: 13rem; }
+
 .main__brand {
   font-size: 1.5rem;
   color: #f9f9f9;
@@ -276,7 +303,7 @@ html {
   padding: 0 3rem;
   overflow-x: hidden; }
 
-@media only screen and (max-width: 48em) {
+@media only screen and (max-width: 800px) {
   .about {
     padding: 0 1rem; } }
 
@@ -289,7 +316,7 @@ html {
   gap: 5rem;
   min-height: 40rem; }
 
-@media only screen and (max-width: 48em) {
+@media only screen and (max-width: 800px) {
   .about__container {
     text-align: center;
     height: auto;
@@ -306,12 +333,16 @@ html {
 @media only screen and (max-width: 768px) {
   .about__title {
     text-align: center;
-    font-size: 3rem; } }
+    font-size: 2.5rem; } }
 
 .about__info-text {
   font-size: 1.5rem;
   line-height: 1.6;
   color: #666; }
+
+@media only screen and (max-width: 600px) {
+  .about__info-text {
+    font-size: 1.3rem; } }
 
 .about__right {
   width: 100%;
@@ -321,7 +352,7 @@ html {
   background-size: cover;
   background-position: right; }
 
-@media only screen and (max-width: 48em) {
+@media only screen and (max-width: 800px) {
   .about__right {
     display: none; } }
 
@@ -434,6 +465,10 @@ html {
   line-height: 1.6;
   color: #c6c6c6; }
 
+@media only screen and (max-width: 600px) {
+  .process__des-text {
+    font-size: 1.3rem; } }
+
 .process__title {
   color: #f9f9f9;
   letter-spacing: 1px;
@@ -445,7 +480,7 @@ html {
 @media only screen and (max-width: 768px) {
   .process__title {
     text-align: center;
-    font-size: 3rem; } }
+    font-size: 2.5rem; } }
 
 .process__right {
   width: 100%;
@@ -502,7 +537,7 @@ html {
 @media only screen and (max-width: 768px) {
   .work__title {
     text-align: center;
-    font-size: 3rem; } }
+    font-size: 2.5rem; } }
 
 @media only screen and (max-width: 768px) {
   .work__title {
