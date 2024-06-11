@@ -1,7 +1,3 @@
-Here's a brief summary of the UC Service website:
-
----
-
 # UP Consultants Service
 
 [Visit our website](https://uc-service.uz/)
@@ -39,7 +35,3 @@ We value your feedback! Reach out at [ucservice.team@gmail.com](mailto:ucservice
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-This content highlights the key points of the UC Service website in a concise manner. Replace the placeholder link and email address with actual information if needed.
